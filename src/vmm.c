@@ -51,10 +51,6 @@ Statistics simulate_virtual_memory_accesses(FILE *fd_addresses, FILE *fd_backing
         page_number = GET_PAGE_NUMBER(address);
         offset = GET_OFFSET(address);
 
-        if (32956 == address) {
-            printf("address: %d\n", address);
-        }
-
         stats.total_memory_accesses++;
 
         // TLB HIT
