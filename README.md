@@ -10,7 +10,7 @@ The objective of this assignment is to understand the steps involved in the tran
 To run the program, follow these steps:
 
     $ make
-    $ ./vmm --backing ../BACKING_STORE.bin ../addresses.txt
+    $ ./vmm --backing BACKING_STORE.bin addresses.txt
 
 # File Format
 
@@ -30,7 +30,3 @@ These files serve as references for validating the output of the program against
 ### Sample Output
     Virtual: 16916, Physical: 20, Value: 0, TLB hit: false, PT hit: false
     Virtual: 62493, Physical: 285, Value: 0, TLB hit: false, PT hit: false
-
-# Implementation Details
-
-The program employs a Translation Lookaside Buffer (TLB) and Page Tables to perform the virtual-to-physical address translation. It utilizes a demand paging mechanism to handle page faults and a page replacement algorithm to manage the TLB.
