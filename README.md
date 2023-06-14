@@ -9,12 +9,7 @@ The objective of this assignment is to understand the steps involved in the tran
 
 To run the program, follow these steps:
 
-    $ cd betriebssysteme_public/hausuebung/hu2/memory/
-    $ mkdir build
-    $ cd build
-    $ cmake ../
     $ make
-
     $ ./vmm --backing ../BACKING_STORE.bin ../addresses.txt
 
 # File Format
